@@ -43,12 +43,12 @@ namespace GradeBook.UserInterfaces
             var type = parts[2].ToLower();
             BaseGradeBook gradeBook;
             //BaseGradeBook gradeBook = new BaseGradeBook(name);
-            if (parts[2] == "standard")
+            if (type == "standard")
             {
                 gradeBook = new StandardGradeBook(name);
                 Console.WriteLine("Created gradebook {0}.", name);
             }
-            else if (parts[2] == "ranked")
+            else if (type == "ranked")
             {
                 gradeBook = new RankedGradeBook(name);
                 Console.WriteLine("Created gradebook {0}.", name);
